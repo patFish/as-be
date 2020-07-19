@@ -1,7 +1,7 @@
-import { FleetController } from "./Fleet/Fleet";
-import { HealthController } from "./Health/Health";
+import { FleetController } from './Fleet/Fleet'
+import { HealthController } from './Health/Health'
 
-const fleetController = new FleetController();
-const healthController = new HealthController();
+const fleetController = new FleetController()
+const healthController = new HealthController()
 
-export { fleetController, healthController };
+export { fleetController, healthController }
