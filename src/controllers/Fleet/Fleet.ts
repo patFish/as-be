@@ -20,6 +20,76 @@ export class FleetController extends CrudController {
     ddb.scan(params, (err, data) => {
       if (err) {
         console.log('Error', err)
+        res.json([
+          {
+            id: 12345678,
+            name: 'Executive car 1',
+            vin: 'ASD423E3D3RF5',
+            make: 'Mazda',
+            model: 'CX-5',
+            year: '2019',
+            fuelType: 'petrol',
+            type: 'SUV',
+            Position: {
+              lat: 3.995,
+              lon: 43.2221,
+            },
+            odometer: 43546,
+            fuel: 33.4,
+            battery: 12.7,
+          },
+          {
+            id: 12345678,
+            name: 'Executive car 2',
+            vin: 'ASD423E3D3RF5',
+            make: 'Mazda',
+            model: 'CX-5',
+            year: '2019',
+            fuelType: 'petrol',
+            type: 'SUV',
+            Position: {
+              lat: 3.795,
+              lon: 43.1221,
+            },
+            odometer: 43546,
+            fuel: 33.4,
+            battery: 12.7,
+          },
+          {
+            id: 12345678,
+            name: 'Executive car 3',
+            vin: 'ASD423E3D3RF5',
+            make: 'Mazda',
+            model: 'CX-5',
+            year: '2019',
+            fuelType: 'petrol',
+            type: 'SUV',
+            Position: {
+              lat: 4.095,
+              lon: 43.2221,
+            },
+            odometer: 43546,
+            fuel: 33.4,
+            battery: 12.7,
+          },
+          {
+            id: 12345678,
+            name: 'Executive car 4',
+            vin: 'ASD423E3D3RF5',
+            make: 'Mazda',
+            model: 'CX-5',
+            year: '2019',
+            fuelType: 'petrol',
+            type: 'SUV',
+            Position: {
+              lat: 4.195,
+              lon: 43.2221,
+            },
+            odometer: 43546,
+            fuel: 33.4,
+            battery: 12.7,
+          },
+        ])
       } else {
         res.json(data.Items)
       }
