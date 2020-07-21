@@ -73,12 +73,12 @@ export class FleetController extends CrudController {
               fuelType: dbCar.fuelType.S,
               type: dbCar.type.S,
               Position: {
-                lat: parseInt(dbCar.Position.M.lat.N, 10),
-                lon: parseInt(dbCar.Position.M.lon.N, 10),
+                lat: parseFloat(dbCar.Position.M.lat.N),
+                lon: parseFloat(dbCar.Position.M.lon.N),
               },
               odometer: parseInt(dbCar.odometer.N, 10),
-              fuel: parseInt(dbCar.fuel.N, 10),
-              battery: parseInt(dbCar.battery.N, 10),
+              fuel: parseFloat(dbCar.fuel.N),
+              battery: parseFloat(dbCar.battery.N),
             }
           }
         )
