@@ -34,11 +34,14 @@ jobs:
   cypress-run:
       runs-on: ubuntu-16.04
       steps:
-        - uses: actions/checkout@v1
-        - uses: cypress-io/github-action@v2
-          with:
-            browser: chrome
-            headless: true
+      - uses: actions/checkout@v1
+      - uses: cypress-io/github-action@v2
+        with:
+          working-directory: examples/start-and-yarn-workspaces/workspace-1
+          build: yarn run build
+          start: yarn start
+          wait-on: 'http://localhost:4000'
+
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
