@@ -10,12 +10,12 @@ As part of the application process I got challenged by the task to develop an e2
 
 ## Requirements
 
-| Requirement            | implemented | Note                                |
-| ---------------------- | ----------- | ----------------------------------- |
-| express.js             | :check:     |                                     |
-| build on typescript    | :check:     |                                     |
-| dockerized             | :check:     |                                     |
-| deployed by GH Actions | :check:     |                                     |
-| enabled tests          | :check:     | cypress framework                   |
-| test coverage          | :x:         | no meaningful coverage achieved atm |
-| deploy in stages       | :check:     | fails after tests                   |
+| Requirement            | implemented        | Note                                |
+| ---------------------- | ------------------ | ----------------------------------- |
+| express.js             | :white_check_mark: |                                     |
+| build on typescript    | :white_check_mark: |                                     |
+| dockerized             | :white_check_mark: |                                     |
+| deployed by GH Actions | :white_check_mark: |                                     |
+| enabled tests          | :white_check_mark: | cypress framework                   |
+| test coverage          | :x:                | no meaningful coverage achieved atm |
+| deploy in stages       | :white_check_mark: | fails after tests                   |
